@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageview"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/coverimg"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:isScrollContainer="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/mohsin"
+        app:civ_border_color="#3F51B5"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coverimg"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/atext"
+            android:layout_width="405dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="NAME : Mohsin Iftikhar" />
+        <TextView
+            android:id="@+id/btext"
+            android:layout_width="405dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Section : BSCS(7B) Morning" />
+        <TextView
+            android:id="@+id/ctext"
+            android:layout_width="405dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="F.Name : Iftikhar Ahmed" />
+        <TextView
+            android:id="@+id/dtext"
+            android:layout_width="405dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Contact : 0304-4098958" />
+        <TextView
+            android:id="@+id/ftext"
+            android:layout_width="405dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="CNIC : 31304-5762239-9" />
+        <TextView
+            android:id="@+id/bgext"
+            android:layout_width="405dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Address : RaoTown Street 4 House 1" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

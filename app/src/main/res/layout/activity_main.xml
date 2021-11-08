@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/head"
+        android:text="student Signup"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:id="@+id/blayoue"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Name"></TextView>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etname"
+            android:inputType="text"
+            ></EditText>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blayoue"
+        android:id="@+id/clayout"
+
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:text="Email"></TextView>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etemail"
+            android:inputType="text"
+            ></EditText>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clayout"
+        android:id="@+id/dlayout"
+
+
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass"
+            android:text="Password"></TextView>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etpass"
+            android:inputType="textPassword"
+            ></EditText>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dlayout"
+        android:id="@+id/elayout"
+
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Gander"
+            android:text="Gender"></TextView>
+
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+
+            ></RadioGroup>
+
+        <RadioButton
+            android:id="@+id/rbmale"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            ></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbfemale"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Female"></RadioButton>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elayout"
+        android:id="@+id/flayout"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject"
+            android:text="Subject"></TextView>
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="BSCS" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox"
+            android:text="BSIT"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox2"
+            android:text="BSSE"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text="Already have an account" />
+    <Button
+        android:id="@+id/Question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="Question 1" />
+
+    <LinearLayout
+        android:id="@+id/glayout"
+        android:layout_width="161dp"
+        android:layout_height="186dp"
+        android:layout_below="@+id/flayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-37dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="414dp"
+            android:layout_height="wrap_content"
+            android:text="Signup" />
+    </LinearLayout>
+
+
+</RelativeLayout>

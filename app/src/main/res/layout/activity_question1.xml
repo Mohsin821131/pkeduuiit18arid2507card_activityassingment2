@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question1">
+
+    <LinearLayout
+        android:id="@+id/alayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/imageButtonUI"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#673AB7"
+            app:srcCompat="@android:drawable/stat_notify_voicemail"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="62dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/alayout">
+
+        <TextView
+            android:id="@+id/textviewUI"
+            android:layout_width="50dp"
+            android:layout_height="37dp"
+            android:text="My Text" />
+
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewUI"
+            android:inputType="text"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/blayout">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Pizza" />
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox"
+            android:text="Burger" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox2"
+            android:text="Moltan Lava" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/clayout">
+
+        <RadioButton
+            android:id="@+id/rbtake"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Take away"
+            ></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbdine"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Dinein"></RadioButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/elayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/dlayout">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="ToggleButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/elayout">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:src="@drawable/cover" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/glayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/flayout">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>
